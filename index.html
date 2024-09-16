@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="anisul islam" />
+    <meta name="keywords" content="portfolio, html, sanjida akter" />
+    <meta
+      name="description"
+      content="Sanjida akter a web developer..."
+    />
+<link rel="stylesheet" href="style.css">
+
+    <title>My Portfolio</title>
+
+    <!-- font-awesome cdn  -->
+    <script src="https://kit.fontawesome.com/320c208f87.js" crossorigin="anonymous"></script>
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--Section: navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#skills">My Skills</a>
+          </li>
+          <li>
+            <a href="#projects">My Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main >
+      <!--Section: intro -->
+ 
+      <section id="intro" class="card" >
+        <div >
+          <h1>Sanjida Akter</h1>
+          <p class="intro__description"><em>Web developer and Student of Computer Sceience</em></p>
+         
+         
+
+        </div>
+      </section>
+
+      <!--Section: about me -->
+      <section id="about" class="card">
+     
+          <h2>About Me</h2>
+          <img src="girl.jpeg" alt="Sanjida's photo">
+        
+          <p>
+            <strong>Experience:</strong> 6 month expercince in web development
+          </p>
+          <p>
+            <strong>Education:</strong> B.Sc in computer science and engineering
+           
+          </p>
+      </section>
+
+      <!--Section: Skills -->
+      <section id="skills" class="card">
+        <h2>Skills</h2>
+
+        <table >
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td rowspan="2">Expert</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div>
+          <h3>Skill Progress</h3>
+          <div>
+            <label for="htmlProgress">HTML: </label>
+            <progress id="htmlProgress" value="90" max="100">90%</progress>
+          </div>
+          <div>
+            <label for="cssProgress">CSS: </label>
+            <progress id="cssProgress" value="85" max="100">85%</progress>
+          </div>
+          <div>
+            <label for="jsProgress">Javascript: </label>
+            <progress id="jsProgress" value="75" max="100">75%</progress>
+          </div>
+        </div>
+
+        <div>
+          <h3>Experience Level</h3>
+          <label for="experienceLevel">Experience: </label>
+          <meter id="experienceLevel" min="0" max="10" value="5">5 years</meter>
+        </div>
+      </section>
+
+      <!--Section: Projects -->
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <ol>
+          <li>
+            portfolio website
+            >
+          </li>
+          <li>Blog website</li>
+          <li>E-commerce website</li>
+        </ol>
+      </section>
+
+    
+      <!--Section: Contacts -->
+      <section id="contact" class="card">
+        <h2>Contact Me</h2>
+      <!-- <form action="https://formspree.io/f/moqgoypp" method="POST"> -->
+        <form action="https://formspree.io/f/xgvwbvla" method="POST">
+          <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="age">Age : </label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="55"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="website"> Website: </label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              pattern="https?://.+"
+            />
+          </div>
+
+          <div>
+            <label for="subject">Subject: </label>
+            <select name="subject" id="subject">
+              <option value="inquiry">Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="job">Job Opportunity</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Meassage : </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
+
+    <!--footer -->
+    <footer>
+    
+      <div class="Copyright">
+        <p>Copyright reserved by &copy; Sanjida2024</p>
+            <p>Developed with &hearts;</p>
+   
+      </div>
+      
+      <div class="social-media">
+        <h3>Follow Me</h3>
+        <ul>
+          <li>
+            <a href=" https://www.facebook.com/tithy.rahman.7967 " target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+      
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@Sohoz-Edu "
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube"></i>
+    
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7298.061949099039!2d90.41892883331715!3d23.853033826890456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c676fb82ac61%3A0xe5a25185f37546b9!2sTaltola%2C%20Dhaka%201230!5e0!3m2!1sen!2sbd!4v1726391297245!5m2!1sen!2sbd" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </footer>
+  </body>
+</html>
